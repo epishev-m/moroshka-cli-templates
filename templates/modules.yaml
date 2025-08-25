@@ -1,0 +1,6 @@
+- url: https://github.com/epishev-m/e314-exceptions
+  name: Exceptions
+  version: 1.1.2
+- url: https://github.com/epishev-m/e314-protect
+  name: Protect
+  version: 2.1.1

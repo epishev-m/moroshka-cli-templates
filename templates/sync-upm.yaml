@@ -1,0 +1,27 @@
+name: Sync files to UPM
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "LICENSE.md"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Copy LICENSE.md to upm
+        run: |
+          cp README.md upm/README.md
+          cp LICENSE.md upm/LICENSE.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add UPM/LICENSE.md
+          git commit -m "ci: Sync LICENSE to UPM" || echo "No changes to commit"
+          git push

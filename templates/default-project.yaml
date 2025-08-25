@@ -1,0 +1,10 @@
+version: "1.0.0"
+description: "TODO: Description"
+author:
+  name: "Name"
+  email: "email@example.com"
+unity:
+  version: "6000.2"
+  release: "0f1"
+license: "MIT"
+dependencies: "none"
