@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <LangVersion>9</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Moroshka.{Name}</Title>
+        <Authors>Moroshka</Authors>
+        <Copyright>Copyright (c) 2025 Moroshka</Copyright>
+        <RepositoryType>Git</RepositoryType>
+        <Version>{version}</Version>
+        <PackageId>Moroshka.{Name}</PackageId>
+        <RepositoryUrl>https://github.com/moroshka-game/moroshka-{name}.git</RepositoryUrl>
+        <Description>{description}</Description>
+        <PackageProjectUrl>https://github.com/moroshka-game/moroshka-{name}</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>unity</PackageTags>
+        <PackageReleaseNotes>https://github.com/moroshka-game/moroshka-{name}/blob/main/upm/CHANGELOG.md</PackageReleaseNotes>
+        <RootNamespace>Moroshka.{Name}</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\.github\README.md">
+          <Pack>true</Pack>
+          <PackagePath>\</PackagePath>
+          <Link>Docs\README.md</Link>
+        </None>
+        <None Include="..\LICENSE.md">
+          <Pack>true</Pack>
+          <PackagePath>\</PackagePath>
+          <Link>Docs\LICENSE.md</Link>
+        </None>
+    </ItemGroup>
+{nuget}
+</Project>

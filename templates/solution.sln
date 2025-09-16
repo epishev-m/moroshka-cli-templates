@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{{guid.sln}}") = "Moroshka.{Name}", "moroshka-{name}\Moroshka.{Name}.csproj", "{{guid.main.csproj}}"
+EndProject
+Project("{{guid.sln}}") = "Moroshka.{Name}.Tests", "moroshka-{name}-tests\Moroshka.{Name}.Tests.csproj", "{{guid.tests.csproj}}"
+EndProject
+Project("{{guid.sln}}") = "Moroshka.{Name}.Benchmark", "moroshka-{name}-benchmark\Moroshka.{Name}.Benchmark.csproj", "{{guid.benchmark.csproj}}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{{guid.main.csproj}}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{{guid.main.csproj}}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{{guid.main.csproj}}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{{guid.main.csproj}}.Release|Any CPU.Build.0 = Release|Any CPU
+		{{guid.tests.csproj}}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{{guid.tests.csproj}}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{{guid.tests.csproj}}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{{guid.tests.csproj}}.Release|Any CPU.Build.0 = Release|Any CPU
+		{{guid.benchmark.csproj}}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{{guid.benchmark.csproj}}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{{guid.benchmark.csproj}}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{{guid.benchmark.csproj}}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
